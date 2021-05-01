@@ -1,0 +1,55 @@
+terraform_essentials kveluswa$ terraform version
+Terraform v0.13.3
+
+
+terraform_essentials kveluswa$ terraform console
+> var.myvar
+Hello Terraform
+> "${var.myvar}"
+Hello Terraform
+> exit
+
+
+terraform_essentials kveluswa$ terraform console
+> var.mymap
+{
+  "mykey" = "my value"
+}
+> var.mymap["mykey"]
+my value
+
+
+terraform_essentials kveluswa$ terraform console
+> var.mylist
+[
+  1,
+  2,
+  3,
+]
+> var.mylist[0]
+1
+> var.mylist[2]
+3
+> var.mylist[1]
+2
+> element(var.mylist, 0)
+1
+> element(var.mylist, 1)
+2
+> element(var.mylist, 2)
+3
+> slice(var.mylist,0,1)
+[
+  1,
+]
+> slice(var.mylist,0,2)
+[
+  1,
+  2,
+]
+> slice(var.mylist,1,3)
+[
+  2,
+  3,
+]
+> exit
