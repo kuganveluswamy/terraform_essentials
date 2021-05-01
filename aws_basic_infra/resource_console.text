@@ -1,0 +1,24 @@
+terraform_essentials kveluswa$ terraform console
+> var.AWS_REGION
+eu-west-1
+> exit
+
+terraform_essentials kveluswa$ cat terraform.tfvars 
+AWS_REGION="eu-west-1"
+
+terraform_essentials kveluswa$ terraform console
+> var.AMIS[var.AWS_REGION]
+my ami
+> var.AMIS["eu-west-1"]
+my ami
+> var.AMIS["us-east-1"]
+
+>  
+Error: Invalid index
+
+  on <console-input> line 1:
+  (source code not available)
+    |----------------
+    | var.AMIS is map of string with 1 element
+
+The given key does not identify an element in this collection value.
