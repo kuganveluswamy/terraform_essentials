@@ -10,7 +10,7 @@ Terraform will perform the following actions:
   # aws_instance.example will be destroyed
   - resource "aws_instance" "example" {
       - ami                                  = "ami-0ce448b1704085256" -> null
-      - arn                                  = "arn:aws:ec2:us-west-1:880087580894:instance/i-0b28212eb4632bca6" -> null
+      - arn                                  = "arn:aws:ec2:us-west-1:88xxxxxx0894:instance/i-xxxxxxx32bca6" -> null
       - associate_public_ip_address          = true -> null
       - availability_zone                    = "us-west-1c" -> null
       - cpu_core_count                       = 1 -> null
@@ -19,18 +19,18 @@ Terraform will perform the following actions:
       - ebs_optimized                        = false -> null
       - get_password_data                    = false -> null
       - hibernation                          = false -> null
-      - id                                   = "i-0b28212eb4632bca6" -> null
+      - id                                   = "i-xxxxxxx32bca6" -> null
       - instance_initiated_shutdown_behavior = "stop" -> null
       - instance_state                       = "running" -> null
       - instance_type                        = "t2.micro" -> null
       - ipv6_address_count                   = 0 -> null
       - ipv6_addresses                       = [] -> null
       - monitoring                           = false -> null
-      - primary_network_interface_id         = "eni-02b72d1ec62f1e63c" -> null
-      - private_dns                          = "ip-172-31-13-86.us-west-1.compute.internal" -> null
-      - private_ip                           = "172.31.13.86" -> null
-      - public_dns                           = "ec2-54-176-246-64.us-west-1.compute.amazonaws.com" -> null
-      - public_ip                            = "54.176.246.64" -> null
+      - primary_network_interface_id         = "eni-network_interface_id" -> null
+      - private_dns                          = "ip-<ip_address>.us-west-1.compute.internal" -> null
+      - private_ip                           = "<ip_address>" -> null
+      - public_dns                           = "ec2-xx-yyy-xx-yy.us-west-1.compute.amazonaws.com" -> null
+      - public_ip                            = "<ip_address>" -> null
       - secondary_private_ips                = [] -> null
       - security_groups                      = [
           - "default",
@@ -65,7 +65,7 @@ Terraform will perform the following actions:
           - iops                  = 100 -> null
           - tags                  = {} -> null
           - throughput            = 0 -> null
-          - volume_id             = "vol-0fab7415c29a1983f" -> null
+          - volume_id             = "vol-xxxxxxxxc29a1983f" -> null
           - volume_size           = 8 -> null
           - volume_type           = "gp2" -> null
         }
