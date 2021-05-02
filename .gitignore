@@ -1,3 +1,5 @@
+.terraform/
+aws_ec2/.terraform/
 aws_ec2/terraform.tfstate
 aws_ec2/terraform.tfvars
 aws_ec2/terraform.tfstate.backup
