@@ -1,0 +1,8 @@
+- Simple variable types    
+    - String
+    - Number
+    - Bool
+
+- Complex variable types
+    - List
+    - Map
