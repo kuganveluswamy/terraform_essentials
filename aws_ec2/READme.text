@@ -1,0 +1,13 @@
+Steps:
+- Create a user using IAM and obtain ACCESS_KEY and SECRET_KEY
+- Place the ACCESS_KEY and SECRET_KEY in terraform.tfvars file (file not included in repo)
+  - example:  terraform.tfvars
+    ACCESS_KEY="PASTE_ACCESS_KEY_HERE"
+    SECRET_KEY="PASTE_SECRET_KEY_HERE"
+- These variable are access using the below lines in instance.tf
+    variable "ACCESS_KEY" {
+        type = string
+    }
+    variable "SECRET_KEY" {
+        type = string
+    }
